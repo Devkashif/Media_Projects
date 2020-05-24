@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="#fff"
+    tools:context=".Mobile_Verification_Screen">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoname"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonsans_medium"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:textColor="#707173"
+        android:textStyle="bold"
+        android:text="Verify Your Mobile"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginLeft="50dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile no">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Mobilenum_for_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:inputType="phone"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-40dp"
+            android:src="@drawable/smartphone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bentonsans_regular"
+            android:textSize="13sp"
+            android:textColor="#c0c0c0"
+            android:textStyle="bold"
+            android:text="Don't get the OTP? "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bentonsans_regular"
+            android:textSize="13sp"
+            android:onClick="resend_OTP"
+            android:textStyle="bold"
+            android:textColor="#707173"
+            android:text="Resend OTP"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnshapewithcolor"
+            android:textColor="#fff"
+            android:onClick="Send_OTP"
+            android:textAllCaps="false"
+            android:text="Send OTP"/>
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/line"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bentonsans_regular"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:layout_weight="1"
+        android:textColor="#707173"
+        android:textAlignment="center"
+        android:text="Please enter the OTP sent\n on your registered Mobile no."/>
+
+    <LinearLayout
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnshapewithcolor"
+            android:layout_marginBottom="-10dp"
+            android:textColor="#fff"
+            android:onClick="verify"
+            android:textAllCaps="false"
+            android:text="Verify"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

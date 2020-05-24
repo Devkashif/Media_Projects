@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Multipleoption_Signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-30dp"
+        android:layout_weight="1"
+        android:layout_marginRight="50dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoname"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7"
+        android:orientation="vertical"
+        android:layout_marginTop="-40dp"
+
+        android:gravity="center">
+
+       <LinearLayout
+           android:layout_width="250dp"
+           android:layout_height="50dp"
+           android:layout_weight="1"
+           android:onClick="creatAccount"
+           android:background="@drawable/btnshapewithcolor">
+
+           <ImageView
+               android:layout_width="32dp"
+               android:layout_height="32dp"
+               android:layout_marginLeft="18dp"
+               android:layout_marginTop="10dp"
+               android:src="@drawable/ic_createaccount"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Create Your Account"
+               android:layout_gravity="center"
+               android:textColor="#fff"
+               android:layout_marginLeft="15dp"
+               android:textStyle="bold"
+               android:fontFamily="@font/bentonsans_regular"
+               android:textSize="16dp"/>
+
+
+       </LinearLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Login with Mobile no."
+            android:textColor="#DB4040"
+            android:onClick="LoginWithMobile"
+            android:fontFamily="@font/bentonsans_regular"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:background="@drawable/btnshape"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="#d72027"/>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:onClick="signupwith_fasebook"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/fbbtnshapewithcolor">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_facebook"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue with Facebook"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:fontFamily="@font/bentonsans_regular"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:onClick="signup_with_Google"
+            android:background="@drawable/google_buttonshape">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/google"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Google"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:fontFamily="@font/bentonsans_regular"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:onClick="signup_with_Twitter"
+            android:background="@drawable/twitter_buttonshape">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/twitter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Twitter"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:fontFamily="@font/bentonsans_regular"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:onClick="signup_with_Linkedin"
+            android:background="@drawable/linkedin_buttonshape">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_linkedin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Linkedin"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:fontFamily="@font/bentonsans_regular"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textSize="14dp"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:layout_marginTop="25dp"
+            android:src="@drawable/line"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Skip"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/colorAccent"
+            android:onClick="skipscreen"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/bentonsans_regular"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            android:background="@drawable/btnshape"/>
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

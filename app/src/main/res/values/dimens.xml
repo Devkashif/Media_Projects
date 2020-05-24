@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="txt9">9dp</dimen>
+    <dimen name="txt10">10dp</dimen>
+    <dimen name="size50">50dp</dimen>
+    <dimen name="margintop">30</dimen>
+</resources>
